@@ -3,7 +3,6 @@ require('dotenv').config(); // Load variables from .env into the environment
 const timestamps = require('./timestamps');
 
 /** Configuration **/
-const nanoNodeUrl = process.env.NANO_NODE_URL || `http://172.31.7.100:7076`; // Nano node RPC url
 const nanoNodeUrl = process.env.NANO_NODE_URL || `http://[::1]:7002`; // Nano node RPC url
 const nanoWorkNodeUrl = process.env.NANO_WORK_NODE_URL || `http://[::1]:7002`; // Nano work node RPC url
 const listeningPort = process.env.APP_PORT || 9950; // Port this app will listen on
